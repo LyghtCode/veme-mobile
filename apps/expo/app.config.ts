@@ -41,15 +41,34 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   plugins: [
     "expo-router",
-    "react-native-imglysdk",
     [
-      "expo-build-properties",
+      "react-native-imglysdk",
       {
         android: {
-          kotlinVersion: "1.9.22",
+          version: "10.9.0",
+          kspVersion: "1.8.0-1.0.9",
+          modules: [
+            "ui:core",
+            "ui:transform",
+            "ui:filter",
+            "assets:filter-basic",
+          ],
+          buildToolsVersion: "34.0.0",
+          minSdkVersion: "21",
+          compileSdkVersion: "34",
+          targetSdkVersion: "34",
+          kotlinGradlePluginVersion: "1.8.0",
         },
       },
     ],
-    "./plugins/custom-ksp",
+    // [
+    //   "expo-build-properties",
+    //   {
+    //     android: {
+    //       kotlinVersion: "1.9.22",
+    //     },
+    //   },
+    // ],
+    // "./plugins/custom-ksp",
   ],
 });

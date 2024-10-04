@@ -1,10 +1,9 @@
+import type { AppRouter } from "@veme/api";
 import { cache } from "react";
 import { headers } from "next/headers";
 import { createHydrationHelpers } from "@trpc/react-query/rsc";
-
-import type { AppRouter } from "@acme/api";
-import { createCaller, createTRPCContext } from "@acme/api";
-import { auth } from "@acme/auth";
+import { createCaller, createTRPCContext } from "@veme/api";
+import { auth } from "@veme/auth";
 
 import { createQueryClient } from "./query-client";
 

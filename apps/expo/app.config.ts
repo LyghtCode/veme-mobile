@@ -2,9 +2,9 @@ import type { ConfigContext, ExpoConfig } from "expo/config";
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
-  name: "expo",
-  slug: "expo",
-  scheme: "expo",
+  name: "veme",
+  slug: "veme",
+  scheme: "veme",
   version: "0.1.0",
   orientation: "portrait",
   icon: "./assets/icon.png",
@@ -29,11 +29,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       backgroundColor: "#1F104A",
     },
   },
-  // extra: {
-  //   eas: {
-  //     projectId: "your-eas-project-id",
-  //   },
-  // },
+  extra: {
+    eas: {
+      projectId: "d862a267-8b8c-4e33-a135-f608d4f297db",
+    },
+  },
   experiments: {
     tsconfigPaths: true,
     typedRoutes: true,

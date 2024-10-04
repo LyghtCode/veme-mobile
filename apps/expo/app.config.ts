@@ -1,4 +1,5 @@
 import type { ConfigContext, ExpoConfig } from "expo/config";
+import buildPropertiesPlugin from "expo-build-properties";
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
@@ -38,5 +39,17 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     tsconfigPaths: true,
     typedRoutes: true,
   },
-  plugins: ["expo-router", "react-native-imglysdk"],
+  plugins: [
+    "expo-router",
+    "react-native-imglysdk",
+    [
+      "expo-build-properties",
+      {
+        android: {
+          kotlinVersion: "1.9.22",
+        },
+      },
+    ],
+    "./plugins/custom-ksp",
+  ],
 });

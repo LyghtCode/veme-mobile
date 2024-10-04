@@ -23,8 +23,8 @@
     "ui-add": "turbo run ui-add"
   },
   "devDependencies": {
-    "@veme/prettier-config": "workspace:*",
     "@turbo/gen": "^2.1.1",
+    "@veme/prettier-config": "workspace:*",
     "prettier": "catalog:",
     "turbo": "^2.1.1",
     "typescript": "catalog:"

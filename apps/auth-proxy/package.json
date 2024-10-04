@@ -13,11 +13,11 @@
     "@auth/core": "0.34.2"
   },
   "devDependencies": {
+    "@types/node": "^20.14.15",
     "@veme/eslint-config": "workspace:*",
     "@veme/prettier-config": "workspace:*",
     "@veme/tailwind-config": "workspace:*",
     "@veme/tsconfig": "workspace:*",
-    "@types/node": "^20.14.15",
     "eslint": "catalog:",
     "h3": "^1.12.0",
     "nitropack": "^2.9.7",

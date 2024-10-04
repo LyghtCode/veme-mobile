@@ -39,10 +39,10 @@
     "tailwind-merge": "^2.5.2"
   },
   "devDependencies": {
+    "@types/react": "catalog:react18",
     "@veme/eslint-config": "workspace:*",
     "@veme/prettier-config": "workspace:*",
     "@veme/tsconfig": "workspace:*",
-    "@types/react": "catalog:react18",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "react": "catalog:react18",

@@ -46,7 +46,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       {
         android: {
           version: "10.9.0",
-          kspVersion: "1.8.0-1.0.9",
+          kspVersion: "1.8.0",
           modules: [
             "ui:core",
             "ui:transform",

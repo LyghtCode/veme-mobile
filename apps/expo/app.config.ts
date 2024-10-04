@@ -19,11 +19,11 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   assetBundlePatterns: ["**/*"],
   ios: {
-    bundleIdentifier: "veme.mobile.com",
+    bundleIdentifier: "com.veme.mobile",
     supportsTablet: true,
   },
   android: {
-    package: "veme.mobile.com",
+    package: "com.veme.mobile",
     adaptiveIcon: {
       foregroundImage: "./assets/icon.png",
       backgroundColor: "#1F104A",

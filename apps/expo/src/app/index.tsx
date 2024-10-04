@@ -18,8 +18,8 @@ function PostCard(props: {
         <Link
           asChild
           href={{
-            pathname: "/post/[id]",
-            params: { id: props.post.id },
+            pathname: "/imgly",
+            // params: { id: props.post.id },
           }}
         >
           <Pressable className="">
